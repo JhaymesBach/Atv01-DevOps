@@ -24,7 +24,7 @@ export default function App() {
         )
         .map(car => (
           <CarCard key={car.id} car={car} />
-        ))}
+          ))}           
 
 
 <footer className="footer">
