@@ -7,7 +7,9 @@ export default function App() {
   const [busca, setBusca] = useState("")
   return (
     <div>
-      <h1>ZOC AUTOS</h1>
+      <header className="header">
+      <h1 >ZOC AUTOS</h1>
+      </header>
 
       <input
         type="text"
@@ -24,6 +26,10 @@ export default function App() {
           <CarCard key={car.id} car={car} />
         ))}
 
+
+<footer className="footer">
+  <p>© 2026 ZOC AUTOS</p>
+</footer>
     </div>
   )
 }
