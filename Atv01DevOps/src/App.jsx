@@ -1,14 +1,16 @@
-import './App.css'
 import CarCard from "./CarCard"
+import Cars from "./Cars"
+import "./App.css"
+
 export default function App() {
-
-
   return (
-<div className="container">
-<h1>ZOC AUTOS</h1>
-<CarCard />
+    <div>
+      <h1>ZOC AUTOS</h1>
 
-</div>
+      {Cars.map((car) => (
+        <CarCard key={car.id} car={car} />
+      ))}
+    </div>
   )
 }
 
